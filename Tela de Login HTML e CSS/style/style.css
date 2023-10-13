@@ -1,0 +1,123 @@
+body {
+  margin: 0px;
+  background-color: rgb(92, 160, 92);
+  font-family: "Courier New", Courier, monospace;
+}
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login > h1 {
+  color: #77ffc0;
+}
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background-color: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+.card-login > h1 {
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+  font-size: 3vw;
+}
+.titulo-img {
+  width: 35vw;
+}
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.textfield > input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 1.2rem;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield > label {
+  color: #f0ffffde;
+}
+
+.textfield > input::placeholder {
+  color: #f0ffffde;
+}
+.btn-login {
+  width: 100%;
+  margin-top: 25px;
+  padding: 16px 0px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  background-color: #00ff88;
+  color: #201b2c;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00000056;
+}
+.card-login > h1 {
+  padding: 15px;
+}
+@media only screen and (max-width: 800px) {
+  .card-login {
+    width: 85%;
+  }
+}
+@media (max-width: 800px) {
+  .main-login {
+    flex-direction: column;
+  }
+  .left-login > h1 {
+    display: none;
+  }
+  .left-login {
+    width: 100%;
+    height: auto;
+  }
+  .righ-login {
+    width: 100%;
+    height: auto;
+  }
+  .left-login > img {
+    width: 50vw;
+  }
+}
